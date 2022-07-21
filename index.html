@@ -6,12 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="text-align: center;">
-    <h3>Calcola qui il prezzo del tuo biglietto! Inserisci:</h3>
-    <input type="text" id="dist" placeholder="Distanza in km">
-    <input type="text" id="age" placeholder="Età">
-    <hr><button id="btn">Calcola</button>
-    <h4>Il prezzo del tuo biglietto è: <span id="prezzo-biglietto"></span></h3>
+<body style="text-align: center; background-color: rgb(71, 71, 71);">
+    <h1 style="color: white;">Calcola qui il prezzo del tuo biglietto! Inserisci:</h1>
+    <div style="display: flex; justify-content: center; align-items: center; background-color: blueviolet; max-width: 800px; margin: auto; height: 100px; gap: 25px; margin-bottom: 40px; border-radius: 20px;">
+        <input type="text" id="nomcog" placeholder="Nome e cognome">
+        <input type="text" id="dist" placeholder="Distanza in km">
+        <input type="text" id="age" placeholder="Età">
+    </div>
+    <button id="btn">Calcola</button>
+    <h4>Il tuo biglietto è:</h4>
+    <div style="display: flex; justify-content: center; align-items: center; background-color: blueviolet; max-width: 800px; margin: auto; height: 100px; gap: 25px; margin-bottom: 40px; border-radius: 20px;">
+        <div>
+            NOME PASSEGGERO<hr><span id="nomino"></span>
+        </div>
+        <div>
+            Offerta<hr>Biglietto standard
+        </div>
+        <div>
+            Costo biglietto<hr><span id="prezzo-biglietto"></span>
+        </div>
+    </div>
     <script src="treno.js"></script>
 </body>
 </html>

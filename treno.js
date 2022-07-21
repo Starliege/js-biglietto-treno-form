@@ -3,8 +3,9 @@ const btn= document.getElementById("btn");
 btn.addEventListener('click', function(){
   let dist = document.getElementById("dist").value;
   let age = document.getElementById("age").value;
+  let nomcog = document.getElementById("nomcog").value;
 
-  let price = dist     * 0.21;
+  let price = dist * 0.21;
 
   if (age <= 0) {
       alert("Noooneeeeee");
@@ -23,5 +24,6 @@ btn.addEventListener('click', function(){
     }
     price = price.toFixed(2);
     document.getElementById("prezzo-biglietto").innerHTML = price;
+    document.getElementById("nomino").innerHTML = nomcog;
     console.log("Il prezzo del tuo biglietto è:", price)
 });
